@@ -1,0 +1,161 @@
+
+        body {
+            background-color: #03222b59; /* Cor de fundo alterada */
+            color: #ffffff; /* Cor da fonte alterada */
+            margin: 0;
+            font-family: Calibri, sans-serif;
+            overflow-x: hidden;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 100vh;
+            background-color: #03171c;
+            padding: 30px 20px;
+            color: rgb(250, 246, 246);
+            transition: width 0.3s;
+        }
+
+        .sidebar img {
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h4 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar .nav {
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .sidebar .nav-item {
+            margin-bottom: 10px;
+        }
+
+        .sidebar .nav-link {
+            margin-top: 20px;
+            margin-left: 30px;
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            display: flex; /* Para alinhar ícone e texto */
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .sidebar .nav-link i {
+            margin-right: 10px; /* Espaço entre o ícone e o texto */
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+            display: inline-block;
+        }
+
+        .sidebar .nav-link:hover {
+            background-color: transparent;
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .sidebar .inicio-link {
+            display: block;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 0px 10px;
+            margin-bottom: 100px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-left: -15px;
+        }
+
+        .sidebar .contato {
+            display: block;
+            width: 100%;
+            color: white;
+            text-align: center;
+            padding: 0px 10px;
+            margin-bottom: 100px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-left: -15px;
+        }
+
+        .sidebar .inicio-link:hover {
+            background-color: transparent;
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .main-content {
+            margin-left: 180px;
+        }
+
+        .section {
+            
+            padding: 30px;
+            background-color: #03171c; /* Cor de fundo das seções */
+            border-radius: 8px; /* Bordas arredondadas para um efeito mais suave */
+        }
+
+        #imagem {
+            background-image: url(imagens/pc.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: rgb(223, 211, 211);
+            height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Cooper;
+            position: relative;
+        }
+
+        .typing-effect {
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid rgb(223, 211, 211);
+            font-size: 35px;
+            color: rgb(223, 211, 211);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .sidebar img {
+                width: 120px;
+            }
+
+            .sidebar .nav-link {
+                font-size: 14px;
+            }
+        }
